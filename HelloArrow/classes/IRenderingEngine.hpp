@@ -9,6 +9,10 @@
 #ifndef IRenderingEngine_h
 #define IRenderingEngine_h
 
+/**
+ *  OpenglES1.1 미구현
+ **/
+
 enum DeviceOrientation {
     DeviceOrientationUnknown,
     DeviceOrientationPortrait,
