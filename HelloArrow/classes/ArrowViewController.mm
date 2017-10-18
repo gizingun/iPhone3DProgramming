@@ -29,6 +29,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    if (glView) {
+        [glView removeFromSuperview];
+        glView = nil;
+    }
+    
+    glView = [[GLView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
+    [self.view addSubview:glView];
+}
 /*
 #pragma mark - Navigation
 

@@ -122,7 +122,7 @@ void RenderingEngine2::ApplyRotation(float degrees) const
 
 void RenderingEngine2::Render() const
 {
-    glClearColor(0.5f, 0.5f, 0.5f, 1);
+    glClearColor(1.f, 1.f, 0.0f, 1);
     glClear(GL_COLOR_BUFFER_BIT);
     
     ApplyRotation(m_currentAngle);

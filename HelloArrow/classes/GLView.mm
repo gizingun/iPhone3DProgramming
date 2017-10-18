@@ -25,6 +25,7 @@
         
         EAGLRenderingAPI api = kEAGLRenderingAPIOpenGLES2;
         m_context = [[EAGLContext alloc] initWithAPI:api];
+        [EAGLContext setCurrentContext:m_context];
         
         m_renderingEngine = CreateRenderer2();
         
