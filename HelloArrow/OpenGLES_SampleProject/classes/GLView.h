@@ -7,14 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IRenderingEngine.hpp"
+
 
 @interface GLView : UIView
 {
-    @private
-    EAGLContext *m_context;
-    IRenderingEngine *m_renderingEngine;
-    float m_timestamp;
 }
 
 @end

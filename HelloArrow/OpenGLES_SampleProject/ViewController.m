@@ -1,28 +1,30 @@
 //
-//  ArrowViewController.m
-//  HelloArrow
+//  ViewController.m
+//  OpenGLES_SampleProject
 //
-//  Created by hyunuk on 2017. 10. 18..
-//  Copyright © 2017년 snowcorp. All rights reserved.
+//  Created by hyunuk on 2017. 10. 19..
+//  Copyright © 2017년 gizingun. All rights reserved.
 //
 
-#import "ArrowViewController.h"
+#import "ViewController.h"
 #import "GLView.h"
 
-@interface ArrowViewController ()
+@interface ViewController ()
 {
     GLView *glView;
 }
 @end
 
-@implementation ArrowViewController
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view, typically from a nib.
+    
     glView = [[GLView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:glView];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -39,14 +41,5 @@
     glView = [[GLView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
     [self.view addSubview:glView];
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

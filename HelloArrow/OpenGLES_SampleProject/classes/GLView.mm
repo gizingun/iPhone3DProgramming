@@ -8,8 +8,14 @@
 
 #import "GLView.h"
 #import <OpenGLES/ES2/gl.h>
+#import "IRenderingEngine.hpp"
 
 @implementation GLView
+{
+    EAGLContext *m_context;
+    IRenderingEngine *m_renderingEngine;
+    float m_timestamp;
+}
 
 + (Class)layerClass
 {

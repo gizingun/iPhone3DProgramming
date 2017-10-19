@@ -91,7 +91,7 @@
 
 -(void)render:(CADisplayLink *)displayLink
 {
-    glClearColor(1.0, 0.0, 1.0, 1.0);
+    glClearColor(.5, .5, .5, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     [context presentRenderbuffer:GL_RENDERBUFFER];
 }

@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  HelloArrow
+//  OpenGLES_SampleProject
 //
-//  Created by hyunuk on 2017. 10. 16..
-//  Copyright © 2017년 snowcorp. All rights reserved.
+//  Created by hyunuk on 2017. 10. 19..
+//  Copyright © 2017년 gizingun. All rights reserved.
 //
 
 #import "AppDelegate.h"
