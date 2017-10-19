@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		875093EA1F98752000734264 /* RenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 875093E81F98752000734264 /* RenderingEngine2.cpp */; };
+		875093EE1F98756F00734264 /* Simple.vert in Resources */ = {isa = PBXBuildFile; fileRef = 875093EC1F98756F00734264 /* Simple.vert */; };
+		875093EF1F98756F00734264 /* Simple.frag in Resources */ = {isa = PBXBuildFile; fileRef = 875093ED1F98756F00734264 /* Simple.frag */; };
+		875093F61F98946A00734264 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875093F51F98946000734264 /* GLKit.framework */; };
 		87D6514D1F97671700B1410F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D651421F97671600B1410F /* AppDelegate.m */; };
 		87D6514E1F97671700B1410F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D651431F97671600B1410F /* Assets.xcassets */; };
 		87D6514F1F97671700B1410F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87D651441F97671600B1410F /* Info.plist */; };
@@ -14,11 +18,16 @@
 		87D651511F97671700B1410F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D651491F97671700B1410F /* Main.storyboard */; };
 		87D651521F97671700B1410F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D6514B1F97671700B1410F /* main.m */; };
 		87D651531F97671700B1410F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D6514C1F97671700B1410F /* ViewController.m */; };
-		87D651581F97685E00B1410F /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D651571F97685E00B1410F /* GLView.m */; };
+		87D651581F97685E00B1410F /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87D651571F97685E00B1410F /* GLView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		87B607B61F9766B50092EAEC /* Tutorial_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		875093E81F98752000734264 /* RenderingEngine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine2.cpp; sourceTree = "<group>"; };
+		875093E91F98752000734264 /* IRenderingEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRenderingEngine.hpp; sourceTree = "<group>"; };
+		875093EC1F98756F00734264 /* Simple.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.vert; sourceTree = "<group>"; };
+		875093ED1F98756F00734264 /* Simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.frag; sourceTree = "<group>"; };
+		875093F51F98946000734264 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		87B607B61F9766B50092EAEC /* Tutorial_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D651411F97671600B1410F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		87D651421F97671600B1410F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		87D651431F97671600B1410F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,7 +38,7 @@
 		87D6514B1F97671700B1410F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87D6514C1F97671700B1410F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		87D651561F97685E00B1410F /* GLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
-		87D651571F97685E00B1410F /* GLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		87D651571F97685E00B1410F /* GLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,25 +46,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				875093F61F98946A00734264 /* GLKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		875093EB1F98755F00734264 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				875093ED1F98756F00734264 /* Simple.frag */,
+				875093EC1F98756F00734264 /* Simple.vert */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+		875093F41F98946000734264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				875093F51F98946000734264 /* GLKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87B607AD1F9766B50092EAEC = {
 			isa = PBXGroup;
 			children = (
+				875093EB1F98755F00734264 /* shader */,
 				87D651541F97680F00B1410F /* classes */,
 				87D651551F97682400B1410F /* otherFiles */,
 				87B607B71F9766B50092EAEC /* Products */,
+				875093F41F98946000734264 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		87B607B71F9766B50092EAEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87B607B61F9766B50092EAEC /* Tutorial_1.app */,
+				87B607B61F9766B50092EAEC /* Tutorial_2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,7 +106,9 @@
 				87D651411F97671600B1410F /* ViewController.h */,
 				87D6514C1F97671700B1410F /* ViewController.m */,
 				87D651561F97685E00B1410F /* GLView.h */,
-				87D651571F97685E00B1410F /* GLView.m */,
+				87D651571F97685E00B1410F /* GLView.mm */,
+				875093E91F98752000734264 /* IRenderingEngine.hpp */,
+				875093E81F98752000734264 /* RenderingEngine2.cpp */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -110,7 +141,7 @@
 			);
 			name = OpenGLES;
 			productName = OpenGLES_01;
-			productReference = 87B607B61F9766B50092EAEC /* Tutorial_1.app */;
+			productReference = 87B607B61F9766B50092EAEC /* Tutorial_2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D651501F97671700B1410F /* LaunchScreen.storyboard in Resources */,
+				875093EF1F98756F00734264 /* Simple.frag in Resources */,
 				87D6514F1F97671700B1410F /* Info.plist in Resources */,
+				875093EE1F98756F00734264 /* Simple.vert in Resources */,
 				87D6514E1F97671700B1410F /* Assets.xcassets in Resources */,
 				87D651511F97671700B1410F /* Main.storyboard in Resources */,
 			);
@@ -166,9 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D651531F97671700B1410F /* ViewController.m in Sources */,
-				87D651581F97685E00B1410F /* GLView.m in Sources */,
+				87D651581F97685E00B1410F /* GLView.mm in Sources */,
 				87D651521F97671700B1410F /* main.m in Sources */,
 				87D6514D1F97671700B1410F /* AppDelegate.m in Sources */,
+				875093EA1F98752000734264 /* RenderingEngine2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +340,8 @@
 				DEVELOPMENT_TEAM = 96878394SP;
 				INFOPLIST_FILE = otherFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gizingun.OpenGLES.Tutorial;
-				PRODUCT_NAME = Tutorial_1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gizingun.OpenGLES.Tutorial2;
+				PRODUCT_NAME = Tutorial_2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -320,8 +354,8 @@
 				DEVELOPMENT_TEAM = 96878394SP;
 				INFOPLIST_FILE = otherFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gizingun.OpenGLES.Tutorial;
-				PRODUCT_NAME = Tutorial_1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gizingun.OpenGLES.Tutorial2;
+				PRODUCT_NAME = Tutorial_2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
