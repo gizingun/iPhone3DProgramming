@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		87B607B61F9766B50092EAEC /* OpenGLES_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B607B61F9766B50092EAEC /* OpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D651411F97671600B1410F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		87D651421F97671600B1410F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		87D651431F97671600B1410F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		87B607B71F9766B50092EAEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87B607B61F9766B50092EAEC /* OpenGLES_01.app */,
+				87B607B61F9766B50092EAEC /* OpenGLES.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,9 +96,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		87B607B51F9766B50092EAEC /* OpenGLES_01 */ = {
+		87B607B51F9766B50092EAEC /* OpenGLES */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87B607CC1F9766B50092EAEC /* Build configuration list for PBXNativeTarget "OpenGLES_01" */;
+			buildConfigurationList = 87B607CC1F9766B50092EAEC /* Build configuration list for PBXNativeTarget "OpenGLES" */;
 			buildPhases = (
 				87B607B21F9766B50092EAEC /* Sources */,
 				87B607B31F9766B50092EAEC /* Frameworks */,
@@ -108,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = OpenGLES_01;
+			name = OpenGLES;
 			productName = OpenGLES_01;
-			productReference = 87B607B61F9766B50092EAEC /* OpenGLES_01.app */;
+			productReference = 87B607B61F9766B50092EAEC /* OpenGLES.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 87B607B11F9766B50092EAEC /* Build configuration list for PBXProject "OpenGLES_01" */;
+			buildConfigurationList = 87B607B11F9766B50092EAEC /* Build configuration list for PBXProject "OpenGLES" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87B607B51F9766B50092EAEC /* OpenGLES_01 */,
+				87B607B51F9766B50092EAEC /* OpenGLES */,
 			);
 		};
 /* End PBXProject section */
@@ -306,7 +306,7 @@
 				DEVELOPMENT_TEAM = 96878394SP;
 				INFOPLIST_FILE = otherFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gizingun.OpenGLES-01";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gizingun.OpenGLES.Tutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,7 +320,7 @@
 				DEVELOPMENT_TEAM = 96878394SP;
 				INFOPLIST_FILE = otherFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gizingun.OpenGLES-01";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gizingun.OpenGLES.Tutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		87B607B11F9766B50092EAEC /* Build configuration list for PBXProject "OpenGLES_01" */ = {
+		87B607B11F9766B50092EAEC /* Build configuration list for PBXProject "OpenGLES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87B607CA1F9766B50092EAEC /* Debug */,
@@ -338,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87B607CC1F9766B50092EAEC /* Build configuration list for PBXNativeTarget "OpenGLES_01" */ = {
+		87B607CC1F9766B50092EAEC /* Build configuration list for PBXNativeTarget "OpenGLES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87B607CD1F9766B50092EAEC /* Debug */,
